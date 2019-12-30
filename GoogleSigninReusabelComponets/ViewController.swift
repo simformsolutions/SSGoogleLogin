@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     fileprivate func performGoogleSignIn() {
         SSGoogleManager.manager.googleManager?.presentingViewController = self
         SSGoogleManager.manager.googleManager?.delegate = self
-        SSGoogleManager.manager.logInWithGoogle(clientId: clientId, complitionBlock: { (userData, error) in
+        SSGoogleManager.manager.logInWithGoogle(clientId: clientId, completionBlock: { (userData, error) in
             if error == nil {
                 print(userData ?? "")
             } else {
